@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  * @create 2021-01-23 16:07
  */
 @Component
-@FeignClient(value = "BMM-ANALYSIS-SERVICE-LEO",fallback = AnalysisFallbackService.class)
+@FeignClient(value = "BMM-ANALYSIS-SERVICE",fallback = AnalysisFallbackService.class)
 public interface AnalysisService {
     /**
      * 通过用户名和密码获取用户
